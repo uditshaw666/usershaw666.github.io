@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+ margin: 0px; 
+ font-family:Arial, Helvetica, sans-serif  
+}
+body {
+    background-color:white;
+    margin: 0px;
+}
+.full-container {
+    width: 100%;
+    height: 100%;
+}
+.video-container {
+    width: 100%;
+    height: 100%;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height:45vh;
+    background-color:rgb(25, 28, 75);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    /*position: relative;*/
+    line-height: 40px;
+    margin-bottom: 50px;
+    
+}
+a {
+    text-decoration: none;
+    color: yellow;
+    font-size: large;
+}
+.center{
+    /*position: absolute;
+    left: 30%;
+    top:30%;*/
+}
+
+.HEADER-CONTAINER{
+    margin:20px,50%;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: rgb(45, 46, 82);
+}
+
+
+.para{
+    font-size:15px ;
+    font-weight: 100;
+    line-height: 20px;
+    word-spacing: 3px;
+    color:rgb(126, 122, 122);
+    /*white-space: nowrap;*/
+    margin: 20px,0px;
+}
+.flex-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+}
+.container{
+   /*flex: 30%;*/
+    width: 350px;
+    height: 230px;
+    margin: 20px;
+    background-position: center,center;
+    
+    z-index: 1;
+    margin: auto,500px;
+}
+.opaque-background{
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(41, 197, 41, 0.63);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+}
+.flex-item{
+    
+    position: relative;
+    background-image:url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgb(41, 197, 41);
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    
+
+
+}
+.opaque-background:hover{
+    background-color: black;
+}
+.text-container{
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    line-height: 30px;
+
+}
+
+.footer{
+    width: 100%;
+    height:fit-content;
+    background-color:rgb(25, 28, 75) ;
+    margin-top: 40vh;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    line-height: 30px;
+    font-size: smaller  ;
+}
+.side {
+    flex: 30%;
+    padding: 50px;
+}
+.small{
+    
+    color: gray;
+    text-align: center;
+    line-height: 2px;
+}
+.main {
+    flex: 70%;
+    padding: 100px;
+    text-align: center;
+    position: relative;
+}
+.Email {
+    width: 80%;
+    height: 30px;
+    padding: 20px;
+    background-color:rgba(255,255, 255,0.9);
+    border: none;
+    border-radius: 4px;
+}
+.facts {
+    text-align: center;
+    margin: 50px,auto;
+    width: 100%;
+    height: 400px;
+    font-size: larger;
+}
+.tooltip {
+    width: 100%;
+    height:200px ;
+}
+.input {
+    margin: 30px;
+    width: 20%;
+    height: 12%;
+    padding: 15px;
+    background-color: rgba(200,200, 200,0.63);
+    border-radius: 4px;
+    border: none;
+    font-size: medium;
+}
+.submit {
+    background-color:rgba(0,255, 0, 0.63);
+    border: none;
+}
+.map {
+    text-align: center;
+    padding-top: 300px;
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+}
+.fas {
+    width: 200px;
+    height:200px;
+    font-size:200px;
+    color: red;
+}
+.fab {
+    font-size: x-large;
+    padding-right: 20px;
+}
+.fa-amazon {
+    font-size: 100px;
+    color: orangered;
+    /*position: absolute;
+    right: 20px;
+    bottom: 100px;*/
+    padding: 30px;
+}
+.fa-cc-amazon-pay {
+    font-size: 100px;
+    color: yellow;
+    /*position: absolute;
+    left: 20px;
+    bottom: 100px;*/
+}
+.emergency {
+    position: absolute;
+    bottom:10px;
+    padding: 2px;
+}
+.last-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.LAST {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: medium;
+    word-spacing: 5px;
+}
+
+
+@media (max-width:1000px) {
+    .flex-container{
+    
+   flex-wrap: nowrap;
+   flex-direction: column;
+   
+    }
+    .container{
+        display: block;
+        /*flex-direction: column;*/
+    
+        
+    }
+    .text-container{
+        font-size: 14px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .fa-amazon ,.fa-cc-amazon-pay{
+        display: block;
+    }
+    .last-container {
+        flex-direction: column;
+    }
+}
